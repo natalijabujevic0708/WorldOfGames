@@ -1,0 +1,37 @@
+.title {
+    text-align: center;
+}
+.navbar-nav { 
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+}
+.navbar-nav li  a {
+    color: black
+}
+ 
+.guessContainer {
+    background-image: url("../images/backgroundGuess.jpg");
+    opacity: 0.85;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.memoryContainer {
+    background-image: url("../images/backgroundMemory.jpg");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background{
+    background-color: #fafafa;
+    text-align: center;
+    opacity: 0.8;
+    position: relative;
+    top: 20vh;
+    color: rgb(33, 37, 41, 1);
+}
+
