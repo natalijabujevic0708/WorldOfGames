@@ -1,13 +1,16 @@
 body {
     font-family: 'Indie Flower', cursive;
     font-size: 1.3rem;
+    text-align: center
 }
+/*------------------------------------------------Header*/
 .title {
-    text-align: center;
     font-size: 3rem;
 }
-.navbar-nav { 
-    text-align: center;
+.navbar {
+    display: inline-block
+}
+.navbar-nav {
     flex-direction: row;
 }
 .navbar-nav li   {
@@ -16,11 +19,11 @@ body {
 .navbar-nav li  a {
     color: black;
 }
- 
+ /*------------------------------------------------Home page*/
 .guessContainer {
     background-image: url("../images/backgroundGuess.jpg");
     opacity: 0.85;
-    height: 80vh;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,16 +31,25 @@ body {
 
 .memoryContainer {
     background-image: url("../images/backgroundMemory.jpg");
-    height: 80vh;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .background{
     background-color: rgba(194, 203, 212, 0.8);  
-    text-align: center;
     position: relative;
     top: 20vh;
     color: rgb(8, 9, 10);   
 }
-
+/*------------------------------------------------Guess Number page*/
+.buttons {
+    font-size: 2rem;
+}
+.guessPicture {
+    height: 80vh;
+}
+/*------------------------------------------------Footer*/
+.social-links .col a i{
+    color: #212529;
+}
