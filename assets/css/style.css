@@ -1,19 +1,26 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3rem;
+}
 .title {
     text-align: center;
+    font-size: 3rem;
 }
 .navbar-nav { 
-    width: 100%;
     text-align: center;
     flex-direction: row;
 }
+.navbar-nav li   {
+    background-color: rgb(201, 201, 212);
+}
 .navbar-nav li  a {
-    color: black
+    color: black;
 }
  
 .guessContainer {
     background-image: url("../images/backgroundGuess.jpg");
     opacity: 0.85;
-    height: 60vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,17 +28,16 @@
 
 .memoryContainer {
     background-image: url("../images/backgroundMemory.jpg");
-    height: 60vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .background{
-    background-color: #fafafa;
+    background-color: rgba(194, 203, 212, 0.8);  
     text-align: center;
-    opacity: 0.8;
     position: relative;
     top: 20vh;
-    color: rgb(33, 37, 41, 1);
+    color: rgb(8, 9, 10);   
 }
 
