@@ -4,17 +4,26 @@ body {
     text-align: center
 }
 /*------------------------------------------------Header*/
-.title {
-    font-size: 3rem;
+.video-container {
+    height: 30vh;
+    overflow: hidden;
 }
-.navbar {
-    display: inline-block
+video {
+  position: relative;
+}
+.title {
+    position:absolute;
+    top: 10%;
+    left: 10%;
+    color:white;
+    font-size: 2.5rem
+}
+nav{
+    background-color: #83b893;
+    
 }
 .navbar-nav {
     flex-direction: row;
-}
-.navbar-nav li   {
-    background-color: rgb(201, 201, 212);
 }
 .navbar-nav li  a {
     color: black;
@@ -28,7 +37,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .memoryContainer {
     background-image: url("../images/backgroundMemory.jpg");
     height: 70vh;
@@ -38,16 +46,32 @@ body {
 }
 .background{
     background-color: rgba(194, 203, 212, 0.8);  
-    position: relative;
-    top: 20vh;
     color: rgb(8, 9, 10);   
+}
+.backgroundPosition {
+    align-items: center;
+    position: relative;
+    top:20vh;
 }
 /*------------------------------------------------Guess Number page*/
 .buttons {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .guessPicture {
-    height: 80vh;
+    height: 120vh;
+    background-image: url("../images/boardbackground.jpg");
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgroundPositionGuess{
+    color:  rgba(194, 203, 212);  
+    margin-top: 10vh;
+}
+.input-group {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 /*------------------------------------------------Footer*/
 .social-links .col a i{
