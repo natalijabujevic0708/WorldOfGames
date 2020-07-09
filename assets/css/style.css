@@ -5,11 +5,13 @@ body {
 }
 /*------------------------------------------------Header*/
 .video-container {
-    height: 30vh;
+    height: 40vh;
     overflow: hidden;
 }
 video {
-  position: relative;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 .title {
     position:absolute;
@@ -19,39 +21,43 @@ video {
     font-size: 2.5rem
 }
 nav{
-    background-color: #83b893;
+    background-color: rgba(67, 112, 156, 0.8);  
     
+}
+.homeButton {
+    padding-top: 2.5vh;
 }
 .navbar-nav {
     flex-direction: row;
+    position: relative;
 }
 .navbar-nav li  a {
-    color: black;
+    color: white; 
 }
  /*------------------------------------------------Home page*/
-.guessContainer {
-    background-image: url("../images/backgroundGuess.jpg");
-    opacity: 0.85;
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.backgroundHome{
+    background-color: rgba(67, 112, 156, 0.8);  
+    color: rgb(8, 9, 10);  
+    height: 60vh; 
 }
-.memoryContainer {
-    background-image: url("../images/backgroundMemory.jpg");
-    height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.background {
+    background-color: rgba(197, 202, 207, 0.8);  
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
-.background{
-    background-color: rgba(194, 203, 212, 0.8);  
-    color: rgb(8, 9, 10);   
+
+.dot {
+  height: 3vh;
+  width: 3vh;
+  background-color: rgba(67, 112, 156, 0.8); 
+  border-radius: 50%;
+  display: inline-block;
 }
-.backgroundPosition {
-    align-items: center;
-    position: relative;
-    top:20vh;
+
+.activeDot{
+    background-color: rgba(18, 34, 51, 0.8);  
+    border: 1px solid black;
 }
 /*------------------------------------------------Guess Number page*/
 .buttons {

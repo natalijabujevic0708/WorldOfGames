@@ -13,38 +13,37 @@
     <header>
         <div class="video-container">
             <video autoplay muted loop>
-                <source src="assets/videos/Particles.mp4" type="video/mp4" />
+                <source src="assets/videos/Space .mp4" type="video/mp4" />
             </video>
         </div>
         <div class="title"> World of Games</div>
-        <nav class="navbar-light container-fluid">
+        <nav class="container-fluid">
             <ul class="nav navbar-nav row">
-                <li class="active col-3"><a href="index.html">Home</a></li>
+                <li class="active col-3 homeButton"><a href="index.html">Home</a></li>
                 <li class="col-5"><a href="GuessNumber.html">Guess the number!</a></li>
                 <li class="col-4"><a href="#">Memory Game</a></li>
             </ul>
         </nav>
     </header>
-    <section class="container-fluid">
+    <section class="container-fluid backgroundHome">
         <div class="row">
-            <div class="col-12 col-md-6 guessContainer">
-                <div class="background backgroundPosition">
+            <div class="col">
+                <div class="background backgroundPosition text">
                     <h2>Guess the number</h2>
                     <p>Get into the head of the computer and guess what number he is thinking of!</p>
                     <button type="button" class="btn btn-secondary">Play</button>
                 </div>
             </div>
-            <div class="col-12 col-md-6 container-fluid memoryContainer">
-                <div class="background backgroundPosition">
-                    <h2>Memory game</h2>
-                    <p>Test your memory with this fun game!</p>
-                    <button type="button" class="btn btn-secondary">Play</button>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <span id="dotGuess" class="dot activeDot"></span>
+                <span id="dotMemory" class="dot"></span>
             </div>
         </div>
     </section>
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid content">
             <div class="row social-links bg-light">
                 <div class="col">
                     <a target="_blank" href="https://www.facebook.com/"> 
@@ -59,5 +58,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
