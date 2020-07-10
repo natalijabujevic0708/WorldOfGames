@@ -10,28 +10,28 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
+       <header>
         <div class="video-container">
             <video autoplay muted loop>
-                <source src="assets/videos/Particles.mp4" type="video/mp4" />
+                <source src="assets/videos/Space .mp4" type="video/mp4" />
             </video>
         </div>
-        <div class="title content"> World of Games</div>
+        <div class="title"> World of Games</div>
         <nav class="container-fluid">
             <ul class="nav navbar-nav row">
-                <li class="active col-3"><a href="index.html">Home</a></li>
+                <li class="active col-3 homeButton"><a href="index.html">Home</a></li>
                 <li class="col-5"><a href="GuessNumber.html">Guess the number!</a></li>
                 <li class="col-4"><a href="#">Memory Game</a></li>
             </ul>
         </nav>
     </header>
-    <section class="container-fluid guessPicture content">
+    <section class="container-fluid backgroundHome">
         <div class="row">
-            <h2 class="col-12  backgroundPositionGuess"> Guess a number from 1 to 500!</h2>
+            <h2 class="col-12 margin" id="instructions"> Guess a number from 1 to 500!</h2>
             <div class="input-group">
-                <input type="number" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input type="number" class="form-control" aria-label="User's guess" aria-describedby="basic-addon2" id="userGuess">
                 <div class="input-group-append">
-                    <button class="btn btn-success" type="button">Guess!</button>
+                    <button class="btn btn-success" type="button" onclick="guessNumber()">Guess!</button>
                 </div>
             </div>
         </div>
@@ -41,13 +41,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col backgroundPositionGuess">
+            <div class="col margin">
                 <p>Get into the head of the computer and guess what number he is thinking of!</p>
             </div> 
         </div>
     </section>
     <footer>
-        <div class="container-fluid content">
+        <div class="container-fluid">
             <div class="row social-links bg-light">
                 <div class="col">
                     <a target="_blank" href="https://www.facebook.com/"> 
