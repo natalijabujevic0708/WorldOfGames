@@ -29,11 +29,12 @@ $(document).ready(function() {
         }else if (userGuess>computerGuess) {
             return $("#instructions").text(`${userGuess} is incorrect, you aimed too high, try again!`);
         } else {
-            return $("#instructions").text(`Congratulations, ${userGuess} is correct! You can read the computer's mind.`);
+            return $("#instructions").text(`Congratulations, ${userGuess} is correct! You can read the computer's mind. It took you ${i} tries.`);
         };                                           
         };
     $(document).ready(function(){
         radomNumber();
+        return i=0;
     });
 
     $('#newGame').click(function(){
@@ -43,9 +44,11 @@ $(document).ready(function() {
     document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
       guessNumber();
+      i++;
     }
 });
     $('#clickMe').click(function(){
         guessNumber();
+        i++;
     });
 });

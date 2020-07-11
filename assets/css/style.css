@@ -64,6 +64,10 @@ nav{
 .input-group {
     margin: 10%
 }
+/*-------------------------------------------------Memory Page*/
+.memoryCard {
+    background-color: black;
+}
 /*------------------------------------------------Footer*/
 .social-links .col a i{
     color: #212529;
