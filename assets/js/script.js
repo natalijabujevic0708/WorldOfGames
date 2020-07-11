@@ -15,23 +15,37 @@ $(document).ready(function() {
         $("#description").text("Test your memory with this fun game!");
     });
     // guess the number game
+    function radomNumber() {
+        return computerGuess = Math.floor(Math.random()*501);
+    };
+
     function guessNumber() {
-        let computerGuess = Math.floor(Math.random()*501);
-        let  userGuess = $("input:number").val(); 
-        if (userGuess.isFinite==="false") {
-            return $("#instructions").text("Please enter a valid number");
-        }else if (userGuess<1 && userGuess>500) {
+        let userGuess = document.getElementById("userGuess").value; 
+        document.getElementById('userGuess').value = "";
+        if (userGuess<1 || userGuess>500) {
             return $("#instructions").text("Please enter a number between 1 and 500");
         }else if (userGuess<computerGuess) {
-            return $("#instructions").text("You aimed too low, try again!");
+            return $("#instructions").text(`${userGuess} is incorrect, you aimed too low, try again!`);
         }else if (userGuess>computerGuess) {
-            return $("#instructions").text("You aimed too high, try again!");
-        }else if (userGuess===computerGuess) {
-            return $("#instructions").text(`Congratulations,${userGuess} is correct! You can read the computers mind.`);
-        }
-    }
-    $('#guessButton').click(function(){
-        guessNumber();
+            return $("#instructions").text(`${userGuess} is incorrect, you aimed too high, try again!`);
+        } else {
+            return $("#instructions").text(`Congratulations, ${userGuess} is correct! You can read the computer's mind.`);
+        };                                           
+        };
+    $(document).ready(function(){
+        radomNumber();
     });
 
+    $('#newGame').click(function(){
+        radomNumber();
+        $("#instructions").text("Guess a number from 1 to 500!");
+    });
+    document.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      guessNumber();
+    }
+});
+    $('#clickMe').click(function(){
+        guessNumber();
+    });
 });
