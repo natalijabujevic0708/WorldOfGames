@@ -65,9 +65,18 @@ nav{
     margin: 10%
 }
 /*-------------------------------------------------Memory Page*/
-.memoryCard {
-    background-color: black;
+.memoryCardFront {
+    background-image: url("../images/backgroundMemory.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
 }
+
+.firstMemoryCardBack {
+    background-image: url("../images/mandala1.png");
+}
+
 /*------------------------------------------------Footer*/
 .social-links .col a i{
     color: #212529;

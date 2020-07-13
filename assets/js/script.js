@@ -41,7 +41,7 @@ $(document).ready(function() {
         radomNumber();
         $("#instructions").text("Guess a number from 1 to 500!");
     });
-    document.addEventListener('keypress', function (e) {
+    window.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
       guessNumber();
       i++;
@@ -51,4 +51,9 @@ $(document).ready(function() {
         guessNumber();
         i++;
     });
+
+    //Memory game
+    $('.firstPicture').click(function() {
+    $(this).toggleClass('firstMemoryCardBack');
+});
 });
