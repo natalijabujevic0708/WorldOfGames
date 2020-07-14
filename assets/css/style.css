@@ -4,6 +4,22 @@ body {
     text-align: center;
     color: white;
 }
+.pictures {
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+#memoryContainers .row div {
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
 .margin {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -66,15 +82,27 @@ nav{
 }
 /*-------------------------------------------------Memory Page*/
 .memoryCardFront {
-    background-image: url("../images/backgroundMemory.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 30vh;
+    background-image: url("../images/backgroundMemory.png");
 }
 
 .firstMemoryCardBack {
     background-image: url("../images/mandala1.png");
+    z-index: -1;
+}
+.secondMemoryCardBack {
+    background-image: url("../images/mandala2.png");
+}
+.thirdMemoryCardBack {
+    background-image: url("../images/mandala3.jpg");
+}
+.fourthMemoryCardBack {
+    background-image: url("../images/mandala4.png");
+}
+.fifthMemoryCardBack {
+    background-image: url("../images/mandala5.png");
+}
+.sixthMemoryCardBack {
+    background-image: url("../images/mandala6.png");
 }
 
 /*------------------------------------------------Footer*/
