@@ -81,30 +81,35 @@ nav{
     margin: 10%
 }
 /*-------------------------------------------------Memory Page*/
-.memoryCardFront {
-    background-image: url("../images/backgroundMemory.png");
+.memory-game {
+  height: 100vh;
 }
-
-.firstMemoryCardBack {
-    background-image: url("../images/mandala1.png");
-    z-index: -1;
+.memory-card {
+  position: relative;
+    height: 33.33vh;
+    width: 25vw;
+    border: 1px solid black;
+    transform: scale(1);
 }
-.secondMemoryCardBack {
-    background-image: url("../images/mandala2.png");
+.memory-card:active {
+   transform: scale(0.97);
+   transition: transform .2s;
+ }
+.front-face,
+.back-face {
+    height: 100%;
+    width: 75%;
+    padding: 5%;
+    position: absolute;
+    display: flex;
+    object-fit: contain;
 }
-.thirdMemoryCardBack {
-    background-image: url("../images/mandala3.jpg");
+.visibility{
+    visibility: hidden;
 }
-.fourthMemoryCardBack {
-    background-image: url("../images/mandala4.png");
+.show {
+    visibility: visible;
 }
-.fifthMemoryCardBack {
-    background-image: url("../images/mandala5.png");
-}
-.sixthMemoryCardBack {
-    background-image: url("../images/mandala6.png");
-}
-
 /*------------------------------------------------Footer*/
 .social-links .col a i{
     color: #212529;

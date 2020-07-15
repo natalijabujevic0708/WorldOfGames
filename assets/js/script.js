@@ -52,60 +52,11 @@ $(document).ready(function() {
         i++;
     });
 
-    //Memory game
-    $(".firstMemoryCardBack").click(function() {
-    $(this).toggleClass('memoryCardFront');
+    //Memory game 
+    $('.memory-card').on('click', function() {
+        $(this).children('.front-face').toggleClass('visibility')
+        $(this).children('.back-face').toggleClass('visibility')
+    });
+   
+    
 });
-    $('#3, #4').click(function() {
-    $(this).toggleClass('secondMemoryCardBack');
-    });
-    $('#5, #6').click(function() {
-    $(this).toggleClass('thirdMemoryCardBack');
-    });
-    $('#7, #8').click(function() {
-    $(this).toggleClass('fourthMemoryCardBack');
-    });
-    $('#9, #10').click(function() {
-    $(this).toggleClass('fifthMemoryCardBack');
-    });
-    $('#11, #12').click(function() {
-    $(this).toggleClass('sixthMemoryCardBack');
-    });
-    function shuffle() {
-        let idNumber = 1;
-        let arrayNumbers = [];
-        while (idNumber < 13) {
-             let randomNumber =  Math.ceil(Math.random() * 12);
-             if (arrayNumbers.includes(randomNumber)){
-                 continue;
-             }else {
-                if ((randomNumber==1) || (randomNumber==2)){
-                    $(`#${idNumber}`).addClass('firstMemoryCardBack')
-                    idNumber++;
-                }else if ((randomNumber==3) || (randomNumber==4)){
-                    $(`#${idNumber}`).addClass('secondMemoryCardBack');
-                    idNumber++;
-                }else if ((randomNumber==5) || (randomNumber==6)){
-                    $(`#${idNumber}`).addClass('thirdMemoryCardBack');
-                    idNumber++;
-                }else if ((randomNumber==7) || (randomNumber==8)){
-                    $(`#${idNumber}`).addClass('fourthMemoryCardBack');;
-                    idNumber++;
-                }else if ((randomNumber==9) || (randomNumber==10)){
-                    $(`#${idNumber}`).addClass('fifthMemoryCardBack');
-                    idNumber++;
-                }else if ((randomNumber==11) || (randomNumber==12)){
-                    $(`#${idNumber}`).addClass('sixthMemoryCardBack');
-                    idNumber++;
-                };
-            }
-
-        };
-    };
-    $('.memoryButton').click(function(){
-        shuffle();
-    });
-});
-
-
-
