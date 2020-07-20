@@ -6,6 +6,7 @@ $(document).ready(function() {
         $("#section").text("1/2");
         $(".background h2").text("Guess the number");
         $("#description").text("Get into the head of the computer and guess what number he is thinking of!");
+        $("#buttonPlay").attr("href", "GuessNumber.html");
     });
     $('#dotMemory').click(function(){
         $('#dotGuess').removeClass('activeDot');
@@ -13,6 +14,7 @@ $(document).ready(function() {
         $("#section").text("2/2");
         $(".background h2").text("Memory game");
         $("#description").text("Test your memory with this fun game!");
+        $("#buttonPlay").attr("href", "Memory.html");
     });
     // guess the number game
 
@@ -26,14 +28,20 @@ $(document).ready(function() {
         if (userGuess<1 || userGuess>500) {
             return $("#instructions").text("Please enter a number between 1 and 500");
         }else if (userGuess<computerGuess) {
-            return $("#instructions").text(`${userGuess} is incorrect, you aimed too low, try again!`);
+            return $("#instructions").html(`${userGuess} is incorrect <br> You aimed TOO LOW <br> Try again!`);
         }else if (userGuess>computerGuess) {
-            return $("#instructions").text(`${userGuess} is incorrect, you aimed too high, try again!`);
+            return $("#instructions").html(`${userGuess} is incorrect <br> You aimed TOO HIGH <br> Try again!`);
         } else {
-            return $("#instructions").text(`Congratulations, ${userGuess} is correct! You can read the computer's mind. It took you ${i} tries.`);
+            return $("#guessPage").html(`   
+                <div style="padding:10%;">
+                    <h2>Congratulations!!</h2>
+                    <p>${userGuess} is correct! You can read the computer's mind. It took you ${i} tries.</p>
+                    <button type="button" class="btn btn-info buttons"><a href="index.html">Home</button>   
+                </div>
+            `);
         };                                           
     }; 
-    $('#newGame').click(function(){
+    $('.newGame').click(function(){
         radomNumber();
         $("#instructions").text("Guess a number from 1 to 500!");
     });
