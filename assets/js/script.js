@@ -33,7 +33,7 @@ $(document).ready(function() {
             return $("#instructions").html(`${userGuess} is incorrect <br> You aimed TOO HIGH <br> Try again!`);
         } else {
             return $("#guessPage").html(`   
-                <div style="padding:10%;">
+                <div class="congratulations">
                     <h2>Congratulations!!</h2>
                     <p>${userGuess} is correct! You can read the computer's mind. It took you ${i} tries.</p>
                     <button type="button" class="btn btn-info buttons"><a href="index.html">Home</button>   
@@ -41,10 +41,7 @@ $(document).ready(function() {
             `);
         };                                           
     }; 
-    $('.newGame').click(function(){
-        radomNumber();
-        $("#instructions").text("Guess a number from 1 to 500!");
-    });
+
     window.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
         guessNumber();
@@ -66,11 +63,14 @@ $(document).ready(function() {
     let lockBoard = false;
     let hasFlippedCard = false;
     let firstCard, secondCard
+    let countClicks=0;
+    let match = 0;
 
     //function to flip the cards
     function flipCard(){ 
         if (lockBoard) return;
         if (this === firstCard) return;
+        countClicks++
         $(this).children('.front-face').toggleClass('visibility')
         $(this).children('.back-face').toggleClass('visibility')
         if (!hasFlippedCard) {
@@ -88,7 +88,19 @@ $(document).ready(function() {
     //check the cards
     function checkForMatch() {
         if (firstCard.dataset.framework === secondCard.dataset.framework) {
-            disableCards();
+            match++
+            if (match==6){
+                $("#memoryPage").html(`   
+                <div class="congratulations">
+                    <h2>Congratulations!!</h2>
+                    <p>You matched all of the pictures correctly!</p>
+                    <p> It took you ${countClicks/2} tries.</p>
+                    <button type="button" class="btn btn-info buttons"><a href="index.html">Home</button>   
+                </div>`).addClass("backgroundHome").removeClass("memory-game");
+                return match, countClicks = 0;
+            }else{
+                disableCards();
+            }
         }else{
             unflipCards();
         }
@@ -109,7 +121,7 @@ $(document).ready(function() {
             $(secondCard).children('.front-face').toggleClass('visibility')
             $(secondCard).children('.back-face').toggleClass('visibility');
             resetBoard();
-        }, 1000);
+        }, 1500);
     }
     
     //after the check

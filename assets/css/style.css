@@ -4,22 +4,6 @@ body {
     text-align: center;
     color: white;
 }
-.pictures {
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 30vh;
-    background-repeat: no-repeat;
-    border: 1px solid black;
-}
-#memoryContainers .row div {
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 30vh;
-    background-repeat: no-repeat;
-    border: 1px solid black;
-}
 .margin {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -27,6 +11,9 @@ body {
 a {
     color: rgb(241, 238, 238);
 } 
+nav,.backgroundHome {
+    background-color: rgba(67, 112, 156, 0.8);  
+}
 /*------------------------------------------------Header*/
 .video-container {
     height: 40vh;
@@ -43,21 +30,11 @@ video {
     left: 10%;
     font-size: 2.5rem
 }
-nav{
-    background-color: rgba(67, 112, 156, 0.8);  
-}
-.homeButton {
-    padding-top: 2.5vh;
-}
 .navbar-nav {
     flex-direction: row;
     position: relative;
 }
  /*------------------------------------------------Home page*/
-
-.backgroundHome{
-    background-color: rgba(67, 112, 156, 0.8);  
-}
 .background {
     background-color: rgba(197, 202, 207, 0.8);  
     color: black;
@@ -67,10 +44,11 @@ nav{
   width: 3vh;
   border-radius: 50%;
   display: inline-block;
+  background-color: rgba(75, 103, 133);
 }
 
 .activeDot{
-    background-color: rgba(18, 34, 51, 0.8);  
+    background-color: rgba(18, 34, 51);  
     border: 1px solid black;
 }
 /*------------------------------------------------Guess Number page*/
@@ -78,14 +56,18 @@ nav{
     font-size: 1.5rem;
 }
 .input-group {
-    margin: 10%
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.congratulations {
+    padding: 10%;
 }
 /*-------------------------------------------------Memory Page*/
 .memory-game {
   height: 100vh;
 }
 .memory-card {
-  position: relative;
+    position: relative;
     height: 33.33vh;
     width: 25vw;
     border: 1px solid black;
@@ -94,7 +76,7 @@ nav{
 .memory-card:active {
    transform: scale(0.97);
    transition: transform .2s;
- }
+}
 .front-face,
 .back-face {
     height: 100%;
@@ -113,4 +95,39 @@ nav{
 /*------------------------------------------------Footer*/
 .social-links .col a i{
     color: #212529;
+}
+
+/*-------------------------------------------------Media Queries*/
+@media (min-width: 768px) {  
+    body, .btn-secondary, .btn-success, .form-control, h2 {
+        font-size: 2rem;
+    }
+    .btn-secondary {
+        margin-top: 5%;
+    }
+    .title{
+        font-size: 3.5rem;
+    } 
+    .congratulations {
+        padding: 20%;
+    }
+}
+@media (min-width: 992px) { 
+    body, .btn-secondary, .btn-success, .form-control, h1, h2 {
+        font-size: 2.5rem;
+    }
+    footer {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 1200px) {
+    body, .btn-secondary, .btn-success, .form-control, h1, h2 {
+        font-size: 3rem;
+    }
+    .title {
+    font-size: 5rem;
+    }
+    footer {
+        font-size: 2.5rem;
+    }
 }
