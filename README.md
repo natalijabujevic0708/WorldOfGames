@@ -1,6 +1,6 @@
 <h1>World of Games</h1>
 
-[View the live project here.]()
+[View the live project here.](https://natalijabujevic0708.github.io/WorldOfGames/)
 
 This is a game website World of Games. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for users who want to play the games.
 
@@ -92,7 +92,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Frequent User Goals
 
-    1. 1. As a Frequent User, I want to check to see if there are any newly added games.
+    1.  As a Frequent User, I want to check to see if there are any newly added games.
         1. On top of the game description on Home page there is a fraction indicating how many games there are in total so the user can see if there are any new games added.
 
 ### Further Testing
@@ -110,20 +110,20 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### GitHub Pages
 - The project was deployed to GitHub Pages using the following steps:
 
-1. Loged in to GitHub and located the [GitHub Repository]()
+1. Loged in to GitHub and located the [GitHub Repository](https://github.com/natalijabujevic0708/WorldOfGames)
 2. At the top of the Repository, located the "Settings" Button on the menu.
 3. Scrolled down the Settings page until I located the "GitHub Pages" Section.
 4. Under "Source", clicked the dropdown called "None" and select "Master Branch".
 5. The page automatically refreshed.
-6. Scrolled back down through the page to locate the now published site [link]() in the "GitHub Pages" section.
+6. Scrolled back down through the page to locate the now published site [World of Games](https://natalijabujevic0708.github.io/WorldOfGames/) in the "GitHub Pages" section.
 
 
 ## Credits
 
 ### Code
 
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project: Bootstrap Grid System, Nav Bar, Footer, Gallery Layout, Badges, Form Layout.
-
+-   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project: Bootstrap Grid System, Nav Bar, Footer.
+-   [Memory game](https://marina-ferreira.github.io/tutorials/js/memory-game/): The code from the tutorial on Marina Ferreiras Github page was used and modified to create the Memory game.
 
 ### Content
 
@@ -131,12 +131,26 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Media
 
--   All Images were taken from freely-usable source Unsplash and Pexels.
+-   All Images were taken from freely-usable source Pixabay, Vecteezy and Pexels.
+    1. backgroundMemory.png - Image by VintageSnipsAndClips from Pixabay.
+    2. mandala1.png - Image by Gordon Johnson from Pixabay.
+    3. mandala2.png - Image by Gordon Johnson from Pixabay.
+    4. mandala3.jpg - Floral Vectors by Vecteezy.
+    5. mandala4.png - Image by Gordon Johnson from Pixabay.
+    6. mandala5.png - Image by Anne-marie Ridderhof from Pixabay.
+    7. mandala6.png - Image by Anne-marie Ridderhof from Pixabay.
+    8. space.jpg - Photo by Felix Mittermeier from Pexels.
+
+-   The video was taken from freely-usable source Pixabay.
+     1. Space.mp4 - Video by Tomislav Jakupec from Pixabay.
+
+
     
 
 
 ### Acknowledgements
 
 -   My Mentor for continuous helpful feedback.
+-   Marina Ferreira for her tutorial for creating Memory game with JavaScript.
 
 
