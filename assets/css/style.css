@@ -34,6 +34,9 @@ video {
     flex-direction: row;
     position: relative;
 }
+.active, .navbar-nav li a:hover {
+    color: black;
+}
  /*------------------------------------------------Home page*/
 .background {
     background-color: rgba(197, 202, 207, 0.8);  

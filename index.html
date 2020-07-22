@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Of Games</title>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e10eaf955c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -13,13 +12,13 @@
     <header>
         <div class="video-container">
             <video autoplay muted loo poster="assets/images/space.jpg">
-                <source src="assets/videos/Space .mp4" type="video/mp4" />
+                <source src="assets/videos/Space.mp4" type="video/mp4" />
             </video>
+            <p class="title"> World of Games </p>
         </div>
-        <div class="title"> World of Games</div>
         <nav class="container-fluid">
             <ul class="nav navbar-nav row">
-                <li class="active col-3"><a href="index.html">Home</a></li>
+                <li class="col-3"><a href="index.html" class="active">Home</a></li>
                 <li class="col-5"><a href="GuessNumber.html">Guess the number!</a></li>
                 <li class="col-4 memoryButton"><a href="Memory.html">Memory Game</a></li>
             </ul>
@@ -31,15 +30,13 @@
                 <div class="background margin">
                     <p id="section">1/2</p>
                     <h2>Guess the number</h2>
-                    <p id="description">Get into the head of the computer and guess what number he is thinking of!</p>
+                    <p id="description">Get into the head of the computer and guess what number it is thinking of!</p>
                     <button type="button" class="btn btn-secondary"><a id="buttonPlay" href="GuessNumber.html">Play</a></button>
+                    <div class="margin">
+                        <span id="dotGuess" class="dot activeDot"></span>
+                        <span id="dotMemory" class="dot"></span>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <span id="dotGuess" class="dot activeDot"></span>
-                <span id="dotMemory" class="dot"></span>
             </div>
         </div>
     </section>
@@ -58,6 +55,7 @@
             </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e10eaf955c.js" crossorigin="anonymous"></script>
+    <script src="assets/js/indexScript.js"></script>
 </body>
 </html>
