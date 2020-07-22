@@ -32,7 +32,7 @@ This is a game website World of Games. It is designed to be responsive and acces
 #### Imagery
 - Imagery is important. There is a video in the header and it's purpose is to be striking and catch the user's attention. The video has a poster attribute in the case the viddeo doesn't load.
 ### Wireframes
-- Wireframe - [View](assets/images/wireframe_WorldOfGames.jpg)
+- Wireframe - [View](https://drive.google.com/file/d/1z-SbAiCoO5a7hXrxHqOnJYhudbMwTfLN/view?usp=sharing)
 
 ## Features
 

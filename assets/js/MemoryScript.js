@@ -2,7 +2,7 @@ $(document).ready(function() {
     //Memory game 
 
     const cards = document.querySelectorAll('.memory-card');
-    let lockBoard = false;
+    let IgnoreClicks = false;
     let hasFlippedCard = false;
     let firstCard, secondCard
     let countClicks=0;
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     //function to flip the cards
     function flipCard(){ 
-        if (lockBoard) return;
+        if (IgnoreClicks) return;
         if (this === firstCard) return;
         countClicks++
         $(this).children('.front-face').toggleClass('visibility')
@@ -21,7 +21,7 @@ $(document).ready(function() {
             return;
         }else{
             secondCard = this;
-            lockBoard = true;
+            IgnoreClicks = true;
             checkForMatch();
         }
         
@@ -68,15 +68,15 @@ $(document).ready(function() {
     
     //after the check
     function resetBoard() {
-        [hasFlippedCard, lockBoard] = [false, false];
+        [hasFlippedCard, IgnoreClicks] = [false, false];
         [firstCard, secondCard] = [null, null];
     };
 
     //function to shuffle cards
     (function shuffle() {
         cards.forEach(card => {
-            let ramdomPos = Math.floor(Math.random() * 12);
-            card.style.order = ramdomPos;
+            let randomPosition = Math.floor(Math.random() * 12);
+            card.style.order = randomPosition;
         });
     })(); 
 
