@@ -14,19 +14,21 @@ $(document).ready(function() {
         }else if (userGuess>computerGuess) {
             $("#instructions").html(`${userGuess} is incorrect <br> You aimed TOO HIGH <br> Try again!`);
         } else {
-            $("#guessPage").html(`   
+            $("#guessPage").html(`
                 <div class="congratulations">
                     <h2>Congratulations!!</h2>
-                    <p>${userGuess} is correct! You can read the computer's mind. It took you ${i} tries.</p>
-                    <button type="button" class="btn btn-info buttons"><a href="index.html">Home</button>   
-                </div>
+                    <p>${userGuess} is correct! You can read the computer's mind. It took you ${countTries} tries.</p>
+                    <p id="highScore"></p>
+                    <button type="button" class="btn btn-secondary buttons"><a id="buttonPlay" href="GuessNumber.html">Play Again!</a></button>
+                </div> 
             `);
+            SeeHighestScore();
         };                                           
     }; 
 
     function NewUserGuess(){
         guessNumber();
-        i++;
+        countTries++;
     }
 
     window.addEventListener('keypress', function (e) {
@@ -41,6 +43,23 @@ $(document).ready(function() {
 
     $(document).ready(function(){
         radomNumber();
-        return i=0;
+        return countTries=0;
     });
+    // setting the highest score
+    function SeeHighestScore() {
+        let bestScore = localStorage.getItem("bestScore")
+        if (countTries < bestScore) { 
+            $("#highScore").html(`
+            The last best score was ${bestScore} and you managed to beat it!<br>
+            How does it feel being the best of the best?
+            `)
+            return localStorage.setItem("bestScore", countTries);
+
+        }else{
+            $("#highScore").html(`
+            The last best score was ${bestScore}<br>
+            Why don't you try again and beat it?
+            `)
+        }
+    }
 });

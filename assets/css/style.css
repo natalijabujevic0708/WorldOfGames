@@ -36,7 +36,7 @@ video {
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
-.active, .navbar-nav li a:hover {
+.active, .navbar-nav li a:hover, .buttons:hover {
     color: black;
 }
  /*------------------------------------------------Home page*/
@@ -66,6 +66,10 @@ video {
 }
 .congratulations {
     padding: 10%;
+}
+.highScore {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 /*-------------------------------------------------Memory Page*/
 .memory-game {
