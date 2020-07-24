@@ -3,6 +3,24 @@ $(document).ready(function() {
     function radomNumber() {
         return computerGuess = Math.floor(Math.random()*501); // create a random number
     };
+    let data = []
+    function addScore() {
+        // Add the new score to end of 'data'
+        data.push([countTries, userName]);
+        // Sort data by all of the scores
+       data.sort(function(a, b) {
+		    return a[0] < b[0];
+		});
+        // Take just the top 5 elements
+        if (data.length > 5) {
+            data = data[0, 5];
+        };
+        return data;
+        };
+
+	function saveScores() {
+		localStorage.setItem('scoreboard', data);
+	}
 
     function guessNumber() {
         let userGuess = document.getElementById("userGuess").value;  // get the users guess
@@ -14,6 +32,8 @@ $(document).ready(function() {
         }else if (userGuess>computerGuess) {
             $("#instructions").html(`${userGuess} is incorrect <br> You aimed TOO HIGH <br> Try again!`);
         } else {
+            addScore();
+            saveScores();
             $("#guessPage").html(`
                 <div class="congratulations">
                     <h2>Congratulations!!</h2>
@@ -22,7 +42,7 @@ $(document).ready(function() {
                     <button type="button" class="btn btn-secondary buttons"><a id="buttonPlay" href="GuessNumber.html">Play Again!</a></button>
                 </div> 
             `);
-            SeeHighestScore();
+             $("#highScore").text(localStorage.getItem('scoreboard'));
         };                                           
     }; 
 
@@ -30,7 +50,6 @@ $(document).ready(function() {
         guessNumber();
         countTries++;
     }
-
     window.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
         NewUserGuess();
@@ -42,24 +61,10 @@ $(document).ready(function() {
     });
 
     $(document).ready(function(){
+        let name, userName
+        name = prompt("Please enter your user name:");
+        userName = name.value;
         radomNumber();
-        return countTries=0;
+        return countTries=0, userName;
     });
-    // setting the highest score
-    function SeeHighestScore() {
-        let bestScore = localStorage.getItem("bestScore")
-        if (countTries < bestScore) { 
-            $("#highScore").html(`
-            The last best score was ${bestScore} and you managed to beat it!<br>
-            How does it feel being the best of the best?
-            `)
-            return localStorage.setItem("bestScore", countTries);
-
-        }else{
-            $("#highScore").html(`
-            The last best score was ${bestScore}<br>
-            Why don't you try again and beat it?
-            `)
-        }
-    }
 });
