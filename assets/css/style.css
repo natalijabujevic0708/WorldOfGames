@@ -67,9 +67,16 @@ video {
 .congratulations {
     padding: 10%;
 }
-.highScore {
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+#highScore {
+    margin: 10vh auto;
+}
+.tableHighScores{
+    margin: auto;
+}
+.tableHighScores tr td {
+    border: solid 1px;
+    padding: 2vh;
+    
 }
 /*-------------------------------------------------Memory Page*/
 .memory-game {
