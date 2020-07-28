@@ -6,13 +6,13 @@ $(document).ready(function() {
             $("#section").text("1/2");
             $(".background h2").text("Guess the number");
             $("#description").text("Get into the head of the computer and guess what number it is thinking of!");
-            $("#buttonPlay").attr("href", "GuessNumber.html");
+            $("#buttonPlay").attr("href", "guessNumber.html");
             otherButton = '#dotMemory';
         }else{
             $("#section").text("2/2");
             $(".background h2").text("Memory game");
             $("#description").text("Test your memory with this fun game!");
-            $("#buttonPlay").attr("href", "Memory.html");
+            $("#buttonPlay").attr("href", "memory.html");
             otherButton = '#dotGuess';
         }
         $(otherButton).removeClass('activeDot');

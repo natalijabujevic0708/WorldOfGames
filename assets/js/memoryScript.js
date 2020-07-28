@@ -1,12 +1,13 @@
 $(document).ready(function() {
+   
     //Memory game 
-
     const cards = document.querySelectorAll('.memory-card');
     let IgnoreClicks = false;
     let hasFlippedCard = false;
     let firstCard, secondCard
     let countClicks=0;
     let match = 0;
+    var countAttempts;
 
     //function to flip the cards
     function flipCard(){ 
@@ -32,13 +33,19 @@ $(document).ready(function() {
         if (firstCard.dataset.framework === secondCard.dataset.framework) {
             match++
             if (match==6){
+                countAttempts=countClicks/2
+                localStorage.setItem('countAttempts', countAttempts);
+                addScore("memory");
                 $("#memoryPage").html(`   
                 <div class="congratulations">
                     <h2>Congratulations!!</h2>
                     <p>You matched all of the pictures correctly!</p>
-                    <p> It took you ${countClicks/2} tries.</p>
-                    <button type="button" class="btn btn-info buttons"><a href="index.html">Home</button>   
-                </div>`).addClass("backgroundHome").removeClass("memory-game");
+                    <p> It took you ${countAttempts} tries.</p>
+                    <h2> TOP 5 PLAYERS </h2>
+                    <div id="highScoreMemory"></div>
+                    <button type="button" class="btn btn-secondary buttons"><a id="buttonPlay" href="memory.html">Play Again!</a></button>
+                    </div>`).addClass("backgroundHome").removeClass("memory-game");
+                makeHighScoreTable("memory");
                 return match, countClicks = 0;
             }else{
                 disableCards();

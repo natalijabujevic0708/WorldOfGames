@@ -67,7 +67,7 @@ video {
 .congratulations {
     padding: 10%;
 }
-#highScore {
+#highScoreGuess, #highScoreMemory {
     margin: 10vh auto;
 }
 .tableHighScores{
