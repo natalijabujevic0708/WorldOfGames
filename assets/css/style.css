@@ -1,149 +1,46 @@
-body {
-    font-family: 'Indie Flower', cursive, sans-serif;
-    font-size: 1.3rem;
-    text-align: center;
-    color: white;
-}
-.margin {
-    margin-top: 8vh;
-    margin-bottom: 4vh;
-}
-a {
-    color: rgb(241, 238, 238);
-} 
-nav,.backgroundHome {
-    background-color: rgba(67, 112, 156, 0.8);  
-}
+
+
 /*------------------------------------------------Header*/
 .video-container {
-    height: 40vh;
-    overflow: hidden;
+    position:relative;
+    height: 90vh;
 }
 video {
-    object-fit: cover;
-    height: 100%;
+    position:relative;
+    z-index:0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .title {
-    position:absolute;
-    top: 10%;
-    left: 10%;
-    font-size: 2.5rem
+    background-color: rgb(79 134 167 / 25%);
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100vw;
 }
+
+.title p {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
 .navbar-nav {
     flex-direction: row;
-    position: relative;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+    text-align: center;
 }
-.active, .navbar-nav li a:hover, .buttons:hover {
-    color: black;
+a {
+    border: none;
 }
- /*------------------------------------------------Home page*/
-.background {
-    background-color: rgba(197, 202, 207, 0.8);  
-    color: black;
+ul.icons li a {
+    border: solid 1px rgb(222 217 217 / 50%);
+    color: rgba(144, 144, 144, 0.5);
 }
-.dot {
-  height: 3vh;
-  width: 3vh;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: rgba(75, 103, 133);
-}
-
-.activeDot{
-    background-color: rgba(18, 34, 51);  
-    border: 1px solid black;
-}
-/*------------------------------------------------Guess Number page*/
-.buttons {
-    font-size: 1.5rem;
-}
-.input-group {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.congratulations {
-    padding: 10%;
-}
-#highScoreGuess, #highScoreMemory {
-    margin: 10vh auto;
-}
-.tableHighScores{
-    margin: auto;
-}
-.tableHighScores tr td {
-    border: solid 1px;
-    padding: 2vh;
     
-}
-/*-------------------------------------------------Memory Page*/
-.memory-game {
-  height: 100vh;
-}
-.memory-card {
-    position: relative;
-    height: 33.33vh;
-    width: 25vw;
-    border: 1px solid black;
-    transform: scale(1);
-}
-.memory-card:active {
-   transform: scale(0.97);
-   transition: transform .2s;
-}
-.front-face,
-.back-face {
-    height: 100%;
-    width: 75%;
-    padding: 5%;
-    position: absolute;
-    display: flex;
-    object-fit: contain;
-}
-.visibility{
-    visibility: hidden;
-}
-.show {
-    visibility: visible;
-}
-/*------------------------------------------------Footer*/
-.social-links .col a i{
-    color: #212529;
-}
-
-/*-------------------------------------------------Media Queries*/
-@media (min-width: 768px) {  
-    body, .btn-secondary, .btn-success, .form-control, h2 {
-        font-size: 2rem;
-    }
-    .btn-secondary {
-        margin-top: 5%;
-    }
-    .title{
-        font-size: 3.5rem;
-    } 
-    .congratulations {
-        padding: 20%;
-    }
-}
-@media (min-width: 992px) { 
-    body, .btn-secondary, .btn-success, .form-control, h1, h2 {
-        font-size: 2.5rem;
-    }
-    footer {
-        font-size: 2rem;
-    }
-}
-@media (min-width: 1200px) {
-    body, .btn-secondary, .btn-success, .form-control, h1, h2 {
-        font-size: 3rem;
-    }
-    .title {
-    font-size: 5rem;
-    }
-    footer {
-        font-size: 2.5rem;
-    }
-}
