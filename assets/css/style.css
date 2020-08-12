@@ -65,6 +65,14 @@ a {
 .active{
     font-weight: 600;
 }
+/*------------------------------------------------index.html*/
+.box{
+    height: 60vh;
+    overflow: scroll;
+}
+.box .image {
+    height: 20vh;
+}
 /*------------------------------------------------Hero image*/
 .heroImage{
     height: 100vh;
@@ -135,3 +143,38 @@ ul.icons li a {
     border: solid 1px rgb(222 217 217 / 50%);
     color: rgba(144, 144, 144, 0.5);
 }
+/*-------------------------------------------------Media Queries*/
+@media (min-width: 768px) {  
+    .title{
+        top: 35%;
+    }
+    .navbar-nav, .gameIntro {
+        font-size: 1.5rem;
+    }
+    .heroMemory .layer a i, .layer h2 {
+    font-size: 3rem;
+    }
+    .layer {
+    padding-top: 50px;
+    }
+    .layer h1{
+        font-size: 3.5rem;
+    }
+    .layer p, .form-control {
+        font-size: 2.5rem;
+    }
+    .inputSection, #highScoreGuess {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 2rem;
+    }
+    .congratulations .button {
+        display: inline-block;
+        width: 50%;
+        font-size: 1.75rem;
+    }
+    .congratulations{
+        font-size: 2rem;
+    }
+}
+
