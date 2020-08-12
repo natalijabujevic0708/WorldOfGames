@@ -26,7 +26,7 @@ $(document).ready(function() {
                     <p>${userGuess} is correct! You can read the computer's mind. It took you ${countTries} tries.</p>
                     <h2> TOP 5 PLAYERS </h2>
                     <div id="highScoreGuess"></div>
-                    <button type="button" class="btn btn-secondary buttons"><a id="buttonPlay" href="guessNumber.html">Play Again!</a></button>
+                    <button type="button" class="button style2 fit"><a id="buttonPlay" href="guessNumber.html">Play Again!</a></button>
                 </div> 
             `);
             makeHighScoreTable("guessNumber");

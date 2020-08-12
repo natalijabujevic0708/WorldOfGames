@@ -43,7 +43,7 @@ $(document).ready(function() {
                     <p> It took you ${countAttempts} tries.</p>
                     <h2> TOP 5 PLAYERS </h2>
                     <div id="highScoreMemory"></div>
-                    <button type="button" class="btn btn-secondary buttons"><a id="buttonPlay" href="memory.html">Play Again!</a></button>
+                    <button type="button" class="button style3 fit"><a id="buttonPlay" href="memory.html">Play Again!</a></button>
                     </div>`).addClass("backgroundHome").removeClass("memory-game");
                 makeHighScoreTable("memory");
                 return match, countClicks = 0;
