@@ -12,49 +12,48 @@
         <link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body>
-	    <section class="video-container">
-            <video autoplay muted loo poster="assets/images/space.jpg">
-                <source src="assets/videos/space.mp4" type="video/mp4" />
-            </video>
-            <div class="title">
-				<h1>World of Games</h1>
-                <p>Test your memory and intuition with these fun games!</p>
-                <a href="#navigation" class="more scrolly"><i class="fas fa-chevron-circle-down"></i></a>
-            </div>
-            
-		</section>
-        <nav id="navigation">
-            <ul class="nav navbar-nav row">
-                <li class="col-4"><a href="index.html" class="active">Home</a></li>
-                <li class="col-4"><a href="guessNumber.html">Guess the number</a></li>
-                <li class="col-4 memoryButton"><a href="memory.html">Memory</a></li>
-            </ul>
-        </nav>
+        <header>
+            <section class="video-container">
+                <video autoplay muted loo poster="assets/images/space.jpg">
+                    <source src="assets/videos/space.mp4" type="video/mp4" />
+                </video>
+                <div class="title">
+                    <h1>World of Games</h1>
+                    <p>Test your memory and guessing skills with these fun games!</p>
+                    <a id="scrollButtonIndex"><i class="fas fa-chevron-circle-down"></i></a>
+                </div>
+            </section>
+            <nav id="navigation">
+                <ul class="nav navbar-nav row">
+                    <li class="col-4"><a href="index.html" class="active">Home</a></li>
+                    <li class="col-4"><a href="guessNumber.html">Guess the number</a></li>
+                    <li class="col-4 memoryButton"><a href="memory.html">Memory</a></li>
+                </ul>
+            </nav>
+        </header>
 		<section>
-				<div id="main">
-					<div class="inner">
-					<!-- Boxes -->
-						<div class="thumbnails">
-							<div class="box">
-								<img src="https://i1.wp.com/thementalismcourse.com/wp-content/uploads/2018/03/How-do-mentalists-guess-numbers.png?w=752" alt="numbers" class="image fit">
-								<div class="inner">
-									<h3>Guess the number</h3>
-									<p>Get into the head of the computer and guess what number it is thinking of!</p>
-									<button type="button" class="btn btn-secondary fit"><a href="guessNumber.html">Play</a></button>
-								</div>
+			<div id="main">
+				<div class="inner">
+					<div class="thumbnails">
+						<div class="box">
+							<img src="https://i1.wp.com/thementalismcourse.com/wp-content/uploads/2018/03/How-do-mentalists-guess-numbers.png?w=752" alt="numbers" class="image fit">
+							<div class="inner">
+								<h3>Guess the number</h3>
+								<p>Get into the head of the computer and guess what number it is thinking of!</p>
+								<button type="button" class="button fit"><a href="guessNumber.html">Play</a></button>
 							</div>
-
-							<div class="box">
+						</div>
+						<div class="box">
                             <img src="https://images.pexels.com/photos/262488/pexels-photo-262488.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="memory game" class="image fit">
-								<div class="inner">
-									<h3>Memory</h3>
-									<p>Test your memory with this fun game!</p>
-                                    <button type="button" class="btn btn-secondary fit"><a href="guessNumber.html">Play</a></button>
-								</div>
+							<div class="inner">
+								<h3>Memory</h3>
+								<p>Test your memory with this fun game!</p>
+                                <button type="button" class="button style2 fit"><a href="memory.html">Play</a></button>
 							</div>
-                        </div>
-					</div>
+						</div>
+                    </div>
 				</div>
+			</div>
 		</section>
         <footer id="footer">
 			<div class="inner">
@@ -64,10 +63,8 @@
 				</ul>
 			</div>
 		</footer>
-        <!-- Scripts -->
 		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/e10eaf955c.js" crossorigin="anonymous"></script>
-        <!--TEMPLATED scroll script-->
-        <script src="assets/templateScript/jquery.scrolly.min.js"></script>
+        <script src="assets/js/scrollScript.js"></script>
 	</body>
 </html>

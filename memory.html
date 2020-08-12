@@ -1,103 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Of Games</title>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header>
-        <div class="video-container">
-            <video autoplay muted loo poster="assets/images/space.jpg">
-                <source src="assets/videos/Space.mp4" type="video/mp4" />
-            </video>
-            <p class="title"> World of Games </p>
-        </div>
-        <nav class="container-fluid">
-            <ul class="nav navbar-nav row">
-                <li class="col-3"><a href="index.html">Home</a></li>
-                <li class="col-5"><a href="guessNumber.html">Guess the number!</a></li>
-                <li class="col-4 memoryButton"><a href="memory.html" class="active">Memory Game</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Of Games</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!--TEMPLATED-->
+        <link rel="stylesheet" href="assets/css/TEMPLATED.css">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body class="bodyMemory">
+        <header>
+            <nav id="navigation">
+                <ul class="nav navbar-nav align-middle">
+                    <li class="col-4"><a href="index.html">Home</a></li>
+                    <li class="col-4"><a href="guessNumber.html">Guess the number</a></li>
+                    <li class="col-4 memoryButton"><a href="memory.html"  class="active">Memory</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="heroMemory heroImage">
+            <div class="layer">
+                <h1>World of Games</h1>
+                <h2>Memory game!</h2>
+                <p>Level up your memory  with this online memory card game. Flip the cards and match the symbols together in pairs.</p>
+                <a id="scrollButtonMemory"><i class="fas fa-chevron-circle-down"></i></a>
+            </div>
+        </section>
+        <section class="memory-game container-fluid" id="memoryPage">
+            <div class="row ">
+                <div class="memory-card col-3" data-framework="mandala1">
+                    <img class="front-face visibility" src="assets/images/mandala1.png" alt="Mandala1">
+                    <img class="back-face img-fluid" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala1">
+                    <img class="front-face visibility" src="assets/images/mandala1.png" alt="Mandala1">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala2">
+                    <img class="front-face visibility" src="assets/images/mandala2.png" alt="Mandala2">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala2">
+                    <img class="front-face visibility" src="assets/images/mandala2.png" alt="Mandala2">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala3">
+                    <img class="front-face visibility" src="assets/images/mandala3.jpg" alt="Mandala3">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala3">
+                    <img class="front-face visibility" src="assets/images/mandala3.jpg" alt="Mandala4">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala4">
+                    <img class="front-face visibility" src="assets/images/mandala4.png" alt="Mandala4">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala4">
+                    <img class="front-face visibility" src="assets/images/mandala4.png" alt="Mandala4">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala5">
+                    <img class="front-face visibility" src="assets/images/mandala5.png" alt="Mandala5">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala5">
+                    <img class="front-face visibility" src="assets/images/mandala5.png" alt="Mandala5">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala6">
+                    <img class="front-face visibility" src="assets/images/mandala6.png" alt="Mandala6">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+                <div class="memory-card col-3" data-framework="mandala6">
+                    <img class="front-face visibility" src="assets/images/mandala6.png" alt="Mandala6">
+                    <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <ul class="icons">
+                <li><a target="_blank" href="https://twitter.com/explore" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
             </ul>
-        </nav>
-    </header>
-    <section class="memory-game container-fluid" id="memoryPage">
-        <div class="row ">
-            <div class="memory-card col-3" data-framework="mandala1">
-                <img class="front-face visibility" src="assets/images/mandala1.png" alt="Mandala1">
-                <img class="back-face img-fluid" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-             <div class="memory-card col-3" data-framework="mandala1">
-                <img class="front-face visibility" src="assets/images/mandala1.png" alt="Mandala1">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-             <div class="memory-card col-3" data-framework="mandala2">
-                <img class="front-face visibility" src="assets/images/mandala2.png" alt="Mandala2">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-             <div class="memory-card col-3" data-framework="mandala2">
-                <img class="front-face visibility" src="assets/images/mandala2.png" alt="Mandala2">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-            <div class="memory-card col-3" data-framework="mandala3">
-                <img class="front-face visibility" src="assets/images/mandala3.jpg" alt="Mandala3">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-            <div class="memory-card col-3" data-framework="mandala3">
-                <img class="front-face visibility" src="assets/images/mandala3.jpg" alt="Mandala4">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-            <div class="memory-card col-3" data-framework="mandala4">
-                <img class="front-face visibility" src="assets/images/mandala4.png" alt="Mandala4">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-            <div class="memory-card col-3" data-framework="mandala4">
-                <img class="front-face visibility" src="assets/images/mandala4.png" alt="Mandala4">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-            <div class="memory-card col-3" data-framework="mandala5">
-                <img class="front-face visibility" src="assets/images/mandala5.png" alt="Mandala5">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-             <div class="memory-card col-3" data-framework="mandala5">
-                <img class="front-face visibility" src="assets/images/mandala5.png" alt="Mandala5">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-             <div class="memory-card col-3" data-framework="mandala6">
-                <img class="front-face visibility" src="assets/images/mandala6.png" alt="Mandala6">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-             <div class="memory-card col-3" data-framework="mandala6">
-                <img class="front-face visibility" src="assets/images/mandala6.png" alt="Mandala6">
-                <img class="back-face" src="assets/images/backgroundMemory.png" alt="Memory Card">
-            </div>
-        </div>
-    </section>
-    <footer class="container-fluid">
-            <div class="row social-links">
-                <div class="col">
-                    <a target="_blank" href="https://www.facebook.com/"> 
-                        <i class="fa fa-facebook"></i> 
-                    </a> 
-                </div>
-                <div class="col">
-                    <a target="_blank" href="https://twitter.com/explore"> 
-                        <i class="fab fa-twitter-square"></i>
-                    </a> 
-                </div>
-            </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
-        integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" 
-        crossorigin="anonymous">
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="assets/js/memoryScript.js"></script>
-    <script src="https://kit.fontawesome.com/e10eaf955c.js" crossorigin="anonymous"></script>
-    <script src="assets/js/highScore.js"></script>
-</body>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="assets/js/memoryScript.js"></script>
+        <script src="https://kit.fontawesome.com/e10eaf955c.js" crossorigin="anonymous"></script>
+        <script src="assets/js/highScore.js"></script>
+        <script src="assets/js/scrollScript.js"></script>
+    </body>
 </html>

@@ -1,62 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Of Games</title>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header>
-        <div class="video-container">
-            <video autoplay muted loo poster="assets/images/space.jpg">
-                <source src="assets/videos/Space.mp4" type="video/mp4" />
-            </video>
-            <p class="title"> World of Games </p>
-        </div>
-        <nav class="container-fluid">
-            <ul class="nav navbar-nav row">
-                <li class="col-3"><a href="index.html">Home</a></li>
-                <li class="col-5"><a href="guessNumber.html" class="active">Guess the number!</a></li>
-                <li class="col-4 memoryButton"><a href="memory.html">Memory Game</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Of Games</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!--TEMPLATED-->
+        <link rel="stylesheet" href="assets/css/TEMPLATED.css">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav id="navigation">
+                <ul class="nav navbar-nav align-middle">
+                    <li class="col-4"><a href="index.html">Home</a></li>
+                    <li class="col-4"><a href="guessNumber.html" class="active">Guess the number</a></li>
+                    <li class="col-4 memoryButton"><a href="memory.html">Memory</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="heroGuess heroImage">
+            <div class="layer" id="guessPage">
+                <h1>World of Games</h1>
+                <h2>Guess a number!!</h2>
+                <p>Guess the secret number the computer is thinking off. If your guess is too high or too low, you'll get a hint.</p>
+                <div class="inputSection">
+                    <h3 id="instructions">Guess a number from 1 to 500!</h3>
+                    <div class="md-form">
+                        <input type="number" class="form-control" aria-label="User's guess"  id="userGuess">
+                    </div>
+                    <button type="button" class="button fit" id="clickMe" value="clickme">Guess!</button>  
+                </div>
+            </div>
+        </section>
+        <footer>
+            <ul class="icons">
+                <li><a target="_blank" href="https://twitter.com/explore" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
             </ul>
-        </nav>
-    </header>
-    <section class="container-fluid backgroundHome" id="guessPage">
-        <div class="row">
-            <h1 class="col-12 margin" id="instructions"> Guess a number from 1 to 500!</h1>
-            <div class="input-group">
-                <input type="number" class="form-control" aria-label="User's guess"  id="userGuess">
-                <div class="input-group-append">
-                    <button id="clickMe" class="btn btn-success" value="clickme" type="button">Guess!</button>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col margin">
-                <p>Get into the head of the computer and guess what number it is thinking of!</p>
-            </div> 
-        </div>
-    </section>
-    <footer class="container-fluid">
-            <div class="row social-links">
-                <div class="col">
-                    <a target="_blank" href="https://www.facebook.com/"> 
-                        <i class="fa fa-facebook"></i> 
-                    </a> 
-                </div>
-                <div class="col">
-                    <a target="_blank" href="https://twitter.com/explore"> 
-                        <i class="fab fa-twitter-square"></i>
-                    </a> 
-                </div>
-            </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/e10eaf955c.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="assets/js/guessNumberScript.js"></script>
-    <script src="assets/js/highScore.js"></script>
-</body>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e10eaf955c.js" crossorigin="anonymous"></script>
+        <script src="assets/js/guessNumberScript.js"></script>
+        <script src="assets/js/highScore.js"></script>
+    </body>
 </html>
