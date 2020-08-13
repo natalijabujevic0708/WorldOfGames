@@ -12,16 +12,21 @@
         <link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body>
+
         <header>
-            <section class="video-container">
-                <video autoplay muted loo poster="assets/images/space.jpg">
+            <section class="videoContainer">
+                <video class="video" autoplay muted loo poster="assets/images/space.jpg">
                     <source src="assets/videos/space.mp4" type="video/mp4" />
+                     <source src="assets/videos/space.webm" type="video/webm" />
                 </video>
+
                 <div class="title">
                     <h1>World of Games</h1>
                     <p>Test your memory and guessing skills with these fun games!</p>
                     <a id="scrollButtonIndex"><i class="fas fa-chevron-circle-down"></i></a>
                 </div>
+                
+                
             </section>
             <nav id="navigation">
                 <ul class="nav navbar-nav row">
@@ -36,7 +41,7 @@
 				<div class="inner">
 					<div class="thumbnails">
 						<div class="box">
-                            <div class="heroGuess image fit"></div>
+                            <img src="assets/images/numbers.png" alt="Numbers" class="image fit"/>
 							<div class="inner gameIntro">
 								<h3>Guess the number</h3>
 								<p>Get into the head of the computer and guess what number it is thinking of!</p>
@@ -44,7 +49,7 @@
 							</div>
 						</div>
 						<div class="box">
-                            <div class="heroMemory image fit"></div>
+                           <img src="assets/images/puzzle.jpeg" alt="Puzzle" class="image fit"/>
 							<div class="inner gameIntro">
 								<h3>Memory</h3>
 								<p>Ready for some fun mental challenge? <br> Test your memory with this game!</p>

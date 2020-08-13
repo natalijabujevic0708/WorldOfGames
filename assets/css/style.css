@@ -1,31 +1,44 @@
-/*------------------------------------------------Background video on index.html*/
-.video-container {
-    position:relative;
-    height: 90vh;
+body {
+    text-align: center;
 }
-video {
-    position:relative;
-    z-index:0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/*------------------------------------------------Background video on index.html*/
+.videoContainer {
+    position: relative;
+    height:90vh;
+    width:100%;
+    overflow: hidden;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width:auto;
+    z-index: -100;
 }
 /*------------------------------------------------ Title and Header*/
+.title, .layer p, .layer a i {
+    font-size: 1.5rem;
+}
 .title {
-    background-color: rgb(79 134 167 / 25%);
-    position: absolute;
-    top: 20%;
-    z-index: 1;
-    text-align: center;
-    font-size: 2.5rem;
-    width: 100vw;
+    background-color: rgb(80 80 80 / 15%);
+    margin-top: 35vh;
 }
 .title p {
     color: #fff;
     font-weight: 300;
     line-height: 1.5;
     margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 .layer {
     padding-top: 10px;
     background-color: rgb(16 16 16 / 88%);
@@ -34,29 +47,22 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    text-align: center;
     overflow: scroll;
 }
-.layer h1 {
+.layer h1, .heroMemory .layer a i {
     font-size: 2rem
 }
 .layer p {
     color: rgba(255, 255, 255);
-    font-size: 1.5rem;
-    margin-top: 0;
+    margin-bottom: 10px;
     padding: 10px;
 }
-.layer a i {
-    font-size: 1.5rem;
-}
-.heroMemory .layer a i {
-    font-size: 2rem;
+ul.icons li a, .navbar-nav {
+    font-size: 3vh;
 }
 /*------------------------------------------------Navigation*/
 .navbar-nav {
     flex-direction: row;
-    font-size: 1rem;
-    text-align: center;
     padding: 10px;
 }
 a {
@@ -64,14 +70,6 @@ a {
 }
 .active{
     font-weight: 600;
-}
-/*------------------------------------------------index.html*/
-.box{
-    height: 60vh;
-    overflow: scroll;
-}
-.box .image {
-    height: 20vh;
 }
 /*------------------------------------------------Hero image*/
 .heroImage{
@@ -92,8 +90,8 @@ a {
 }
 /*------------------------------------------------Memory Game*/
 .memory-game {
-  height: 100vh;
-  background-color: white;
+    height: 100vh;
+    background-color: white;
 }
 .memory-card {
     position: relative;
@@ -103,8 +101,8 @@ a {
     transform: scale(1);
 }
 .memory-card:active {
-   transform: scale(0.97);
-   transition: transform .2s;
+    transform: scale(0.97);
+    transition: transform .2s;
 }
 .front-face,
 .back-face {
@@ -128,9 +126,6 @@ table {
 table td {
     color: rgba(255, 255, 255);
 }
-.congratulations{
-    text-align: center;
-}
 /*------------------------------------------------Footer*/
 footer {
     text-align: center;
@@ -143,38 +138,21 @@ ul.icons li a {
     border: solid 1px rgb(222 217 217 / 50%);
     color: rgba(144, 144, 144, 0.5);
 }
+
 /*-------------------------------------------------Media Queries*/
-@media (min-width: 768px) {  
-    .title{
-        top: 35%;
-    }
-    .navbar-nav, .gameIntro {
-        font-size: 1.5rem;
-    }
-    .heroMemory .layer a i, .layer h2 {
-    font-size: 3rem;
-    }
+@media (min-width: 576px) {  
     .layer {
     padding-top: 50px;
-    }
-    .layer h1{
-        font-size: 3.5rem;
-    }
-    .layer p, .form-control {
-        font-size: 2.5rem;
     }
     .inputSection, #highScoreGuess {
         padding-left: 50px;
         padding-right: 50px;
-        font-size: 2rem;
+        
     }
     .congratulations .button {
         display: inline-block;
         width: 50%;
-        font-size: 1.75rem;
     }
-    .congratulations{
-        font-size: 2rem;
-    }
+    
 }
 
