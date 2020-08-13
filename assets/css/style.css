@@ -28,7 +28,7 @@ body {
 }
 .title {
     background-color: rgb(80 80 80 / 15%);
-    margin-top: 35vh;
+    margin-top: 30vh;
 }
 .title p {
     color: #fff;
@@ -77,10 +77,10 @@ a {
     position: relative;
 }
 .heroGuess {
-    background:url('https://i1.wp.com/thementalismcourse.com/wp-content/uploads/2018/03/How-do-mentalists-guess-numbers.png?w=752') center center / cover no-repeat;
+    background:url('../images/numbers.png') center center / cover no-repeat;
 }
 .heroMemory{
-    background: url('https://images.pexels.com/photos/262488/pexels-photo-262488.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center / cover no-repeat;
+    background: url('../images/puzzle.jpeg') center center / cover no-repeat;
 }
 /*------------------------------------------------Guess Number Game*/
 
@@ -140,9 +140,9 @@ ul.icons li a {
 }
 
 /*-------------------------------------------------Media Queries*/
-@media (min-width: 576px) {  
+@media (max-width: 576px) {  
     .layer {
-        padding-top: 50px;
+        padding-top: 10vh;
     }
     .inputSection, #highScoreGuess {
         padding-left: 50px;
@@ -155,13 +155,8 @@ ul.icons li a {
     }
     
 }
-@media (min-width: 768px) {
-    .title h1,.title p, .title a, .layer p, .layer a i {
-        font-size: 2rem;
-    }
-}
-@media (min-width: 1200px) {
-   .title h1,.title p, .title a, .layer p, .layer a i {
-        font-size: 2.5rem;
+@media (max-width: 1200px) {
+    .layer {
+    padding-top: 5vh;
     }
 }
