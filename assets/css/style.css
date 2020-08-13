@@ -161,7 +161,7 @@ ul.icons li a {
     }
 }
 @media (min-width: 1200px) {
-    .title{
-        margin-top: 20vh;
+   .title h1,.title p, .title a, .layer p, .layer a i {
+        font-size: 2.5rem;
     }
 }
