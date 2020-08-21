@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>World Of Games</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<!--TEMPLATED-->
@@ -12,28 +11,25 @@
         <!--Custom CSS-->
         <link rel="stylesheet" href="assets/css/style.css">
 	</head>
-	<body>
-
+	<body class="font-size">
         <header>
             <section class="videoContainer">
                 <video class="video" autoplay muted loop>
                     <source src="assets/videos/space.mp4" type="video/mp4" />
                      <source src="assets/videos/space.webm" type="video/webm" />
                 </video>
-
                 <div class="title">
                     <h1>World of Games</h1>
                     <p>Test your memory and guessing skills with these fun games!</p>
                     <a id="scrollButtonIndex"><i class="fas fa-chevron-circle-down"></i></a>
                 </div>
-                
-                
             </section>
             <nav id="navigation">
                 <ul class="nav navbar-nav row">
-                    <li class="col-4"><a href="index.html" class="active">Home</a></li>
-                    <li class="col-4"><a href="guessNumber.html">Guess the number</a></li>
-                    <li class="col-4 memoryButton"><a href="memory.html">Memory</a></li>
+                    <li class="col-3"><a href="index.html" class="active">Home</a></li>
+                    <li class="col-3"><a href="guessNumber.html">Guess the number</a></li>
+                    <li class="col-3 memoryButton"><a href="memory.html">Memory</a></li>
+                    <li class="col-3"><a href="highscoreTables.html">High scores</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,8 +42,9 @@
 							<div class="inner gameIntro">
 								<h3>Guess the number</h3>
 								<p>Get into the head of the computer and guess what number it is thinking of!</p>
-								<button type="button" class="button fit" onclick="window.location.href='/guessNumber.html'">Play</button>
-							</div>
+								<button type="button" class="button style3 fit" onclick="window.location.href='/guessNumber.html'">Play</button>
+                                <button type="button" class="button fit" onclick="window.location.href='/highscoreTables.html'">High score</button>
+                            </div>
 						</div>
 						<div class="box">
                            <img src="assets/images/puzzle.jpeg" alt="Puzzle" class="image fit"/>
@@ -55,6 +52,7 @@
 								<h3>Memory</h3>
 								<p>Ready for some fun mental challenge? <br> Test your memory with this game!</p>
                                 <button type="button" class="button style2 fit" onclick="window.location.href='/memory.html'">Play</button>
+                                <button type="button" class="button fit" onclick="window.location.href='/highscoreTables.html'">High score</button>
 							</div>
 						</div>
                     </div>
@@ -64,13 +62,16 @@
         <footer id="footer">
 			<div class="inner">
 				<ul class="icons">
-					<li><a target="_blank" href="https://twitter.com/explore" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a target="_blank" href="https://www.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a target="_blank" href="https://twitter.com/explore" class="icon fa-twitter font-size"><span class="label">Twitter</span></a></li>
+					<li><a target="_blank" href="https://www.facebook.com/" class="icon fa-facebook font-size"><span class="label">Facebook</span></a></li>
 				</ul>
 			</div>
 		</footer>
+        <!--JQuery-->
 		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/e10eaf955c.js" crossorigin="anonymous"></script>
+        <!--Scroll animation-->
         <script src="assets/js/scrollScript.js"></script>
 	</body>
 </html>
