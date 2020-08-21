@@ -11,7 +11,7 @@
         <!--Custom CSS-->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>
+    <body class="font-size">
         <header>
             <nav id="navigation">
                 <ul class="nav navbar-nav align-middle">
@@ -25,13 +25,83 @@
         <section>
             <div class="padding">
                 <h2> TOP 5 PLAYERS - Guess the number game </h2>
-                <div id="highScoreGuess"></div>
-                <button  type="button" class="btn btn-success font-size" onclick="window.location.href='/WorldOfGames/guessNumber.html'">Play</button>
+                <div id="highScoreGuess">
+                    <table class="tableHighScores">
+                        <tbody>
+                            <tr>
+                                <td> Place </td>
+                                <td> Count of Guesses </td>
+                                <td> Username </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>Poli</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>Nati</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>Nati</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>Gio</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>Koko</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button  type="button" class="button fit play" onclick="window.location.href='/WorldOfGames/guessNumber.html'">Play</button>
             </div>
             <div class="padding">
                 <h2> TOP 5 PLAYERS - Memory game </h2>
-                <div id="highScoreMemory"></div>
-                <button  type="button" class="btn btn-success font-size" onclick="window.location.href='/WorldOfGames/memory.html'">Play</button>
+                <div id="highScoreMemory">
+                    <table class="tableHighScores">
+                        <tbody>
+                            <tr>
+                                <td> Place </td>
+                                <td> Count of Guesses </td>
+                                <td> Username </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>12</td>
+                                <td>Nati</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>13</td>
+                                <td>Yoko</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>14</td>
+                                <td>Gsssa</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>16</td>
+                                <td>Jovio</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>19</td>
+                                <td>Uloj</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button  type="button" class="button fit play" onclick="window.location.href='/WorldOfGames/memory.html'">Play</button>
             </div>
         </section>
         <footer>
