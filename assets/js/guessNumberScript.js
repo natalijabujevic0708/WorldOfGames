@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     // guess the number game
     function radomNumber() {

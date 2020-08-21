@@ -1,5 +1,4 @@
 $(document).ready(function() {
-   
     //Memory game 
     const cards = document.querySelectorAll('.memory-card');
     let IgnoreClicks = false;

@@ -1,3 +1,4 @@
+/*------------------------------------------------General styles*/
 body {
     text-align: center;
     width: 100vw;
@@ -5,6 +6,7 @@ body {
 .font-size {
     font-size: 2.5vh;
 }
+/* CSS rule how to make the scrollbar invisible found on https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-element-scrollable/43186311*/
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Make scrollbar invisible */
@@ -12,10 +14,8 @@ body {
 .padding{
     padding: 5vh;
 }
-.btn-success {
-    font-size: 3vh;
-}
 /*------------------------------------------------Background video on index.html*/
+/* CSS rules for adjusting the video found on https://jsfiddle.net/seadonk/8jmze5yq/2/ */
 .videoContainer {
     position: relative;
     height:90vh;
@@ -32,10 +32,7 @@ body {
     width:auto;
     z-index: -100;
 }
-.thumbnails .box {
-    width: 70%;
-}
-/*------------------------------------------------ Title and Header*/
+/*------------------------------------------------ Index.html*/
 .title {
     background-color: rgb(80 80 80 / 15%);
     margin: 30vh 5vh 5vh 5vh;
@@ -45,27 +42,10 @@ body {
 }
 .title p {
     color: #fff;
-    font-weight: 300;
     line-height: 1.5;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
-.layer {
-    padding: 2.5vh;
-    background-color: rgb(16 16 16 / 88%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
-}
-.layer p {
-    color: rgba(255, 255, 255);
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 3.5vh
+.thumbnails .box {
+    width: 70%;
 }
 /*------------------------------------------------Navigation*/
 .navbar-nav {
@@ -94,10 +74,26 @@ nav .nav .col-3 {
 .heroMemory{
     background: url('../images/puzzle.jpeg') center center / cover no-repeat;
 }
-/*------------------------------------------------Guess Number Game*/
+.layer {
+    padding: 2.5vh;
+    background-color: rgb(16 16 16 / 88%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+.layer p {
+    color: rgba(255, 255, 255);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 3.5vh
+}
 .layer h1 {
     font-size: 5vh;
 }
+/*------------------------------------------------Guess Number Game*/
 .md-form, .inputSection #userGuess{
     height: 5vh;
 }
@@ -109,6 +105,7 @@ nav .nav .col-3 {
     padding-left: 25px;
     padding-right: 25px;
 }
+
 /*------------------------------------------------Memory Game*/
 .memory-game {
     height: 100vh;
@@ -149,7 +146,6 @@ table td {
 }
 /*------------------------------------------------Footer*/
 footer {
-    text-align: center;
     padding-top: 15px;
 }
 ul .icons{

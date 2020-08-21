@@ -22,7 +22,7 @@ This is a game website World of Games. It is designed to be responsive and acces
         
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to see the higescore table.
+        1. As a Frequent User, I want to see the hige score tables.
         
 ### Design
 #### Colour Scheme
@@ -95,8 +95,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to see the higescore table.
-        1. After the user completes a game, there is a pop-up asking their username. After the user writes it, they are informed of their result the highscore table appears listing the top 5 users.
+    1. As a Frequent User, I want to see the hige score tables.
+        1. After the user completes a game, there is a pop-up asking their username. After the user writes it, they are informed of their result the high score table appears listing the top 5 users for that game.
+        2. There is a High score page with the high scores for both games that can be accessed through the navigation bar or with a link under the description of each game on the Home page.
 
 ### Further Testing
 
@@ -124,10 +125,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ## Credits
 
 ### Code
--   [TEMPLATED](https://templated.co/fullmotion/): CSS, HTML5 & Responsive site template used throughout the project: index.html basic design, buttons, footer.
+-   [TEMPLATED](https://templated.co/fullmotion/): CSS, HTML5 & Responsive site template Full Motion by TEMPLATED used throughout the project: index.html basic design, buttons, footer.
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project:  Nav Bar, input field.
 -   [Memory game](https://marina-ferreira.github.io/tutorials/js/memory-game/): The code from the tutorial on Marina Ferreiras Github page was used and modified to create the Memory game.
-
+-   There are links in comments throughout the code leading to sites where the developer found solutions and tips for styling or animating the content.
 ### Content
 
 -   Template for the README.md found on https://github.com/Code-Institute-Solutions/SampleREADME
@@ -142,10 +143,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     5. mandala4.png - Image by Gordon Johnson from Pixabay.
     6. mandala5.png - Image by Anne-marie Ridderhof from Pixabay.
     7. mandala6.png - Image by Anne-marie Ridderhof from Pixabay.
-    8. space.jpg - Photo by Felix Mittermeier from Pexels.
+    8. puzzle.jpeg - Image by Pixabay.
+    9. numbers.png - Image found [here](https://i2.wp.com/www.thementalismcourse.com/wp-content/uploads/2018/03/How-do-mentalists-guess-numbers.png?fit=750%2C500&ssl=1)
 
 -   The video was taken from freely-usable source Pixabay.
-     1. Space.mp4 - Video by Tomislav Jakupec from Pixabay.
+     1. Space.mp4 - Video by Vimeo-Free-Videos from Pixabay.
 
 
     
@@ -155,6 +157,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   My Mentor for continuous helpful feedback.
 -   Marina Ferreira for her tutorial how to create Memory game with JavaScript.
+-   TEMPLATED fot their beautiful Full Motion site template.
 
 
 
