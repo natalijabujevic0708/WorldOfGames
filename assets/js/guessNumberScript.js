@@ -32,8 +32,7 @@ $(document).ready(function() {
                     <button type="button" class="button style2 fit"><a id="buttonPlay" href="guessNumber.html">Play Again!</a></button>
                 </div> 
             `);
-            makeHighScoreTable("guessNumber");
-             
+            makeHighScoreTable("guessNumber"); 
         };                                           
     }; 
 
@@ -49,6 +48,4 @@ $(document).ready(function() {
     $('#clickMe').click(function(){
         NewUserGuess();
     });
-
-   
 });

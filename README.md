@@ -96,7 +96,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   #### Frequent User Goals
 
     1. As a Frequent User, I want to see the hige score tables.
-        1. After the user completes a game, there is a pop-up asking their username. After the user writes it, they are informed of their result the high score table appears listing the top 5 users for that game.
+        1. After the user completes a game, there is a pop-up asking their username. After the user writes it, they are informed of their result and the high score table appears listing the top 5 scores for that game.
         2. There is a High score page with the high scores for both games that can be accessed through the navigation bar or with a link under the description of each game on the Home page.
 
 ### Further Testing
@@ -106,7 +106,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
-
+-   When testing responsiveness on Chrome DevTools some media queries weren't loading properly. There was more testing done on different browsers and the media queries were functioning properly.
 
 
 ## Deployment

@@ -24,7 +24,6 @@ $(document).ready(function() {
             IgnoreClicks = true;
             checkForMatch();
         }
-        
     };
 
     //check the cards
@@ -51,8 +50,7 @@ $(document).ready(function() {
             }
         }else{
             unflipCards();
-        }
-        
+        } 
     };
 
    // if the match was made
@@ -87,6 +85,5 @@ $(document).ready(function() {
     })(); 
 
     cards.forEach(card => card.addEventListener('click', flipCard));
-   
 });
     
