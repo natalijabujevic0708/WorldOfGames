@@ -68,6 +68,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   [W3C Markup Validator](https://validator.w3.org/) - [Result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnatalijabujevic0708.github.io%2FWorldOfGames%2F)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnatalijabujevic0708.github.io%2FWorldOfGames%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#warnings)
+-   [JSHint](https://jshint.com/) - JavaScript code passed through a linter with no major issues.
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
