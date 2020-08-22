@@ -128,7 +128,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [TEMPLATED](https://templated.co/fullmotion/): CSS, HTML5 & Responsive site template Full Motion by TEMPLATED used throughout the project: index.html basic design, buttons, footer.
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project:  Nav Bar, input field.
 -   [Memory game](https://marina-ferreira.github.io/tutorials/js/memory-game/): The code from the tutorial on Marina Ferreiras Github page was used and modified to create the Memory game.
--   There are links in comments throughout the code leading to sites where the developer found solutions and tips for styling or animating the content.
+-   CSS rule how to make the scrollbar invisible in style.css line 9 found on Stack Overflow - [link](https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-element-scrollable/43186311)
+-   CSS rule for adjusting the background video in style.css line 17 and 23 found on JSFiddle - [link](https://jsfiddle.net/seadonk/8jmze5yq/2/)
+-   Example code for scroll animation in scrollScript.js line 2 found on JSFiddle - [link](http://jsfiddle.net/kevinPHPkevin/8tLdq/1/)
+-   Example code for the function makeHighScoreTable in highScore.js line 25 found on Stack Overflow - [link](https://stackoverflow.com/questions/8749236/create-table-with-jquery-append)
+
 ### Content
 
 -   Template for the README.md found on https://github.com/Code-Institute-Solutions/SampleREADME

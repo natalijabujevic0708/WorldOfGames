@@ -6,7 +6,6 @@ body {
 .font-size {
     font-size: 2.5vh;
 }
-/* CSS rule how to make the scrollbar invisible found on https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-element-scrollable/43186311*/
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Make scrollbar invisible */
@@ -15,7 +14,6 @@ body {
     padding: 5vh;
 }
 /*------------------------------------------------Background video on index.html*/
-/* CSS rules for adjusting the video found on https://jsfiddle.net/seadonk/8jmze5yq/2/ */
 .videoContainer {
     position: relative;
     height:90vh;
