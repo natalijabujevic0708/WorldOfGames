@@ -1,3 +1,8 @@
+//putting the placeholder high scores in case the local storage is empty
+if (localStorage.length === 0) {
+    localStorage.setItem("scoreboardGuessNumber", JSON.stringify([["1", "Gry"], ["7", "Wesly"], ["8", "Bori"], ["10", "Rifan"], ["15","Zio"]]))
+    localStorage.setItem("scoreboardMemory", JSON.stringify([["13", "Kyro"], ["16", "Yoko"], ["17", "Edith"], ["20", "Chris"], ["20","Aver"]]))
+}
 function addScore(game) {
     let data = (game==="guessNumber") ? localStorage.getItem("scoreboardGuessNumber") : localStorage.getItem("scoreboardMemory")
     let arrayData = data ? JSON.parse(data) : [];
