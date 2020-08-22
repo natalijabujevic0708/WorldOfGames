@@ -201,4 +201,7 @@ ul.icons li a {
     .md-form, .inputSection #userGuess{
         height: 7.5vh;
     }
+    .padding .play {
+        width: 30vw;
+    }
 }
