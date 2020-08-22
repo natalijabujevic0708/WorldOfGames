@@ -1,15 +1,11 @@
 $(document).ready(function() {
     // guess the number game
     function radomNumber() {
-      let computerGuess;
-      computerGuess = Math.floor(Math.random()*501);
-      return computerGuess; // create a random number
-    }
+        return computerGuess = Math.floor(Math.random()*501); // create a random number
+    };
     $(document).ready(function(){
-      	let countTries;
         radomNumber();
-      	countTries=0;
-        return countTries;
+        return countTries=0;
     });
     function guessNumber() {
         let userGuess = document.getElementById("userGuess").value;  // get the users guess
