@@ -1,4 +1,4 @@
 $(document).ready(function() {
     makeHighScoreTable("guessNumber");
-    makeHighScoreTable("memory")
+    makeHighScoreTable("memory");
 });

@@ -1,11 +1,15 @@
 $(document).ready(function() {
     // guess the number game
     function radomNumber() {
-        return computerGuess = Math.floor(Math.random()*501); // create a random number
-    };
+      let computerGuess;
+      computerGuess = Math.floor(Math.random()*501);
+      return computerGuess; // create a random number
+    }
     $(document).ready(function(){
+      	let countTries;
         radomNumber();
-        return countTries=0;
+      	countTries=0;
+        return countTries;
     });
     function guessNumber() {
         let userGuess = document.getElementById("userGuess").value;  // get the users guess
@@ -33,8 +37,8 @@ $(document).ready(function() {
                 </div> 
             `);
             makeHighScoreTable("guessNumber"); 
-        };                                           
-    }; 
+        }                                           
+    } 
 
     function NewUserGuess(){
         guessNumber();

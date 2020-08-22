@@ -3,7 +3,7 @@ $(document).ready(function() {
     const cards = document.querySelectorAll('.memory-card');
     let IgnoreClicks = false;
     let hasFlippedCard = false;
-    let firstCard, secondCard
+    let firstCard, secondCard;
     let countClicks=0;
     let match = 0;
     var countAttempts;
@@ -12,9 +12,9 @@ $(document).ready(function() {
     function flipCard(){ 
         if (IgnoreClicks) return;
         if (this === firstCard) return;
-        countClicks++
-        $(this).children('.front-face').toggleClass('visibility')
-        $(this).children('.back-face').toggleClass('visibility')
+        countClicks++;
+        $(this).children('.front-face').toggleClass('visibility');
+        $(this).children('.back-face').toggleClass('visibility');
         if (!hasFlippedCard) {
             hasFlippedCard = true;
             firstCard = this;
@@ -24,14 +24,14 @@ $(document).ready(function() {
             IgnoreClicks = true;
             checkForMatch();
         }
-    };
+    }
 
     //check the cards
     function checkForMatch() {
         if (firstCard.dataset.framework === secondCard.dataset.framework) {
-            match++
+            match++;
             if (match==6){
-                countAttempts=countClicks/2
+                countAttempts=countClicks/2;
                 localStorage.setItem('countAttempts', countAttempts);
                 addScore("memory");
                 $("#memoryPage").html(`   
@@ -51,7 +51,7 @@ $(document).ready(function() {
         }else{
             unflipCards();
         } 
-    };
+    }
 
    // if the match was made
     function disableCards() {
@@ -62,9 +62,9 @@ $(document).ready(function() {
     //if the match was not made
     function unflipCards() {
         setTimeout(() => {
-            $(firstCard).children('.front-face').toggleClass('visibility')
-            $(firstCard).children('.back-face').toggleClass('visibility')
-            $(secondCard).children('.front-face').toggleClass('visibility')
+            $(firstCard).children('.front-face').toggleClass('visibility');
+            $(firstCard).children('.back-face').toggleClass('visibility');
+            $(secondCard).children('.front-face').toggleClass('visibility');
             $(secondCard).children('.back-face').toggleClass('visibility');
             resetBoard();
         }, 1500);
@@ -74,7 +74,7 @@ $(document).ready(function() {
     function resetBoard() {
         [hasFlippedCard, IgnoreClicks] = [false, false];
         [firstCard, secondCard] = [null, null];
-    };
+    }
 
     //function to shuffle cards
     (function shuffle() {
