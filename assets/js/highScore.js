@@ -6,22 +6,28 @@ if (localStorage.length === 0) {
 function addScore(game) {
     let data = (game==="guessNumber") ? localStorage.getItem("scoreboardGuessNumber") : localStorage.getItem("scoreboardMemory");
     let arrayData = data ? JSON.parse(data) : [];
-    let userName = prompt("Please enter your user name:");
-    // Add the new score to end of 'data'
-    if (game==="guessNumber") {
-        countTries = localStorage.getItem("countTries");
-        arrayData.push([countTries, userName]);
-    }else {
-        countAttempts = localStorage.getItem('countAttempts');
-        arrayData.push([countAttempts, userName]);
-    }
-    arrayData.sort((a,b) => a[0] - b[0]);
-    if (arrayData.length > 5){
-        arrayData = arrayData.slice(0,5);
-    }
-    (game==="guessNumber") ? localStorage.setItem('scoreboardGuessNumber', JSON.stringify(arrayData)) : localStorage.setItem('scoreboardMemory', JSON.stringify(arrayData));
-    }
-
+    var userName = prompt("Please enter your user name:");
+    function addNewScore() {
+            // Add the new score to end of 'data'
+            if (game==="guessNumber") {
+                countTries = localStorage.getItem("countTries");
+                arrayData.push([countTries, userName]);
+            }else {
+                countAttempts = localStorage.getItem('countAttempts');
+                arrayData.push([countAttempts, userName]);
+            }
+            arrayData.sort((a,b) => a[0] - b[0]);
+            if (arrayData.length > 5){
+                arrayData = arrayData.slice(0,5);
+            }
+            (game==="guessNumber") ? localStorage.setItem('scoreboardGuessNumber', JSON.stringify(arrayData)) : localStorage.setItem('scoreboardMemory', JSON.stringify(arrayData));
+        }
+    while (userName === ""){
+        userName = prompt("Please enter your user name:");
+    } // to make sure the user inputs a user name
+    addNewScore();
+}
+   
 function makeHighScoreTable(game) {
         let arrayofScores = (game==="guessNumber") ? JSON.parse(localStorage.getItem("scoreboardGuessNumber")) : JSON.parse(localStorage.getItem("scoreboardMemory"));
         var content = "<table class='tableHighScores'><tr><td> Place </td><td> Count of Guesses</td><td>Username</td></tr>";
