@@ -2,7 +2,7 @@
 
 [View the live project here.](https://natalijabujevic0708.github.io/WorldOfGames/)
 
-This is a game website World of Games. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for users who want to play the games.
+This is a game website World of Games. A user can choose between Guess the Number and Memory game. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for users who want to play the games.
 
 <h2><img src="./assets/images/responsiveDesign.png"></h2>
 <h2>User Experience (UX)</h2>
