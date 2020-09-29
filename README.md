@@ -8,11 +8,11 @@ This is a game website World of Games. A user can choose between Guess the Numbe
         
 # Design
 ### Colour Scheme
-- The main colours used are black, gray and purple/green for the buttons.
+- The main colours used are black, grey and purple/green for the buttons.
 ### Typography
  - The "Source Sans Pro" font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. 
 ### Imagery
-- Imagery is important. There is a video in the header and it's purpose is to be striking and catch the user's attention.
+- Imagery is important. There is a video in the header and its purpose is to be striking and catch the user's attention.
 ### Wireframes
 - Wireframe - [View](https://drive.google.com/file/d/1z-SbAiCoO5a7hXrxHqOnJYhudbMwTfLN/view?usp=sharing)
 
@@ -59,7 +59,7 @@ On a screen size smaller than a tablet the navbar becomes a collapsible element.
         
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to see the hige score tables.
+        1. As a Frequent User, I want to see the high score tables.
 
 # Testing
 
@@ -76,9 +76,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 1.  _As a First Time Visitor, I want to easily understand the main purpose of the site._
     
-    Upon entering the site, users are automatically greeted with the name of the website and it's purpose.
+    Upon entering the site, users are automatically greeted with the name of the website and its purpose.
     Underneath there is a dropdown icon that scrolls to the section with the game descriptions and the buttons to start the games. 
-    Underneath the video there is a a navigation bar.
+    Underneath the video there is a navigation bar.
 
     <img src="./assets/images/images_readme.md/home_page.png" style="max-height : 300px">
 
@@ -88,14 +88,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     
     At the top of each page there is a clean navigation bar.
 
-    <img src="./assets/images/images_readme.md/guess.png" style="max-height : 300px">
+    <img src="./assets/images/images_readme.md/guess.png" style="max-height : 250px">
 
 3. _As a First Time Visitor, I want to see links to the social media platforms._
     
     There are links to the social media platforms in the footer of every page.
     Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
 
-     <img src="./assets/images/images_readme.md/social_links.png" style="max-height : 300px">
+     <img src="./assets/images/images_readme.md/social_links.png" style="max-height : 250px">
 
 -   ### Returning Visitor Goals
 
@@ -112,16 +112,16 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -  ### Frequent User Goals
 
-    1. _As a Frequent User, I want to see the hige score tables._
+    1. _As a Frequent User, I want to see the high score tables._
         1. After the user completes a game, there is a pop-up asking their username. After the user writes it, they are informed of their result and the high score table appears listing the top 5 scores for that game.
         
-            <img src="./assets/images/images_readme.md/congratulations.png" style="max-height : 300px">
+            <img src="./assets/images/images_readme.md/congratulations.png" style="max-height : 250px">
         
         
         2. There is a High score page with the high scores for both games that can be accessed through the navigation bar or with a link under the description of each game on the Home page.
 
             
-            <img src="./assets/images/images_readme.md/top.png" style="max-height : 300px">
+            <img src="./assets/images/images_readme.md/top.png" style="max-height : 250px">
 
 ## Further Testing
 
@@ -151,9 +151,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 1. [jQuery:](https://jquery.com/) 
     - jQuery was used to create Guess the Number and  Memory Game.
 1. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
 1. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
+    - GitHub is used to store the project's code after being pushed from Git.
 
 
 # Deployment
@@ -161,10 +161,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ## GitHub Pages
 - The project was deployed to GitHub Pages using the following steps:
 
-1. Loged in to GitHub and located the [GitHub Repository](https://github.com/natalijabujevic0708/WorldOfGames)
-2. At the top of the Repository, located the "Settings" Button on the menu.
+1. Logged in to GitHub and located the [GitHub Repository](https://github.com/natalijabujevic0708/WorldOfGames)
+2. At the top of the Repository, located the "Settings" button on the menu.
 3. Scrolled down the Settings page until I located the "GitHub Pages" Section.
-4. Under "Source", clicked the dropdown called "None" and select "Master Branch".
+4. Under "Source", clicked the dropdown called "None" and selected "Master Branch".
 5. The page automatically refreshed.
 6. Scrolled back down through the page to locate the now published site [World of Games](https://natalijabujevic0708.github.io/WorldOfGames/) in the "GitHub Pages" section.
 
@@ -186,7 +186,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Media
 
--   All Images were taken from freely-usable source Pixabay, Vecteezy and Pexels.
+-   All images were taken from freely-usable source Pixabay, Vecteezy and Pexels.
     1. backgroundMemory.png - Image by VintageSnipsAndClips from Pixabay.
     2. mandala1.png - Image by Gordon Johnson from Pixabay.
     3. mandala2.png - Image by Gordon Johnson from Pixabay.
@@ -207,8 +207,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ## Acknowledgements
 
 -   My Mentor for continuous helpful feedback.
--   Marina Ferreira for her tutorial how to create Memory game with JavaScript.
--   TEMPLATED fot their beautiful Full Motion site template.
+-   Marina Ferreira for her tutorial on how to create a Memory game with JavaScript.
+-   TEMPLATED for their beautiful Full Motion site template.
 
 
 
