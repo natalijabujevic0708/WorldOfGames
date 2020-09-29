@@ -88,14 +88,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     
     At the top of each page there is a clean navigation bar.
 
-    <img src="./assets/images/images_readme.md/guess.png" style="max-height : 200px">
+    <img src="./assets/images/images_readme.md/guess.png" style="max-height : 150px">
 
 3. _As a First Time Visitor, I want to see links to the social media platforms._
     
     There are links to the social media platforms in the footer of every page.
     Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
 
-     <img src="./assets/images/images_readme.md/social_links.png" style="max-height : 200px">
+     <img src="./assets/images/images_readme.md/social_links.png" style="max-height : 150px">
 
 -   ### Returning Visitor Goals
 
@@ -115,13 +115,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     1. _As a Frequent User, I want to see the high score tables._
         1. After the user completes a game, there is a pop-up asking their username. After the user writes it, they are informed of their result and the high score table appears listing the top 5 scores for that game.
         
-            <img src="./assets/images/images_readme.md/congratulations.png" style="max-height : 200px">
+            <img src="./assets/images/images_readme.md/congratulations.png" style="max-height : 150px">
         
         
         2. There is a High score page with the high scores for both games that can be accessed through the navigation bar or with a link under the description of each game on the Home page.
 
             
-            <img src="./assets/images/images_readme.md/top.png" style="max-height : 200px">
+            <img src="./assets/images/images_readme.md/top.png" style="max-height : 150px">
 
 ## Further Testing
 
